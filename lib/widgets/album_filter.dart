@@ -139,10 +139,8 @@ class UnderlineGradientIndicatorPainter extends BoxPainter {
     assert(configuration.size != null);
     final bounds = offset & configuration.size!;
 
-    final startOffset =
-        Offset(bounds.bottomCenter.dx + 8, bounds.bottomCenter.dy);
     final endOffset =
-        Offset(bounds.bottomCenter.dx - 23, bounds.bottomCenter.dy);
+        Offset(bounds.bottomCenter.dx + 7, bounds.bottomCenter.dy);
 
     final startGradient =
         Offset(bounds.bottomCenter.dx - 2, bounds.bottomCenter.dy - 2);
@@ -156,6 +154,6 @@ class UnderlineGradientIndicatorPainter extends BoxPainter {
         AppColor.primaryColor,
       ]);
 
-    canvas.drawLine(startOffset, endOffset, paint);
+    canvas.drawLine(bounds.bottomLeft, endOffset, paint);
   }
 }
