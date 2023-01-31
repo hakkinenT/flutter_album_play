@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_widget_integration_test/app_color/app_color.dart';
 import 'package:flutter_widget_integration_test/data.dart';
+import 'package:flutter_widget_integration_test/stack_image.dart';
 import 'package:flutter_widget_integration_test/widgets/album_filter.dart';
 
 import 'widgets/album_list_item.dart';
